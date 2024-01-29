@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui ;
+    background-color: #012B28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+h1{
+    font-family: cursive;
+    color: rgb(167, 152, 85);
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    font-size: 15px;
+    text-align: center;
+   
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+.btn{
+    font-family:monospace ;
+    font-weight: bold;
+    background-color: rgba(221, 221, 56, 0.995);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px;
+}
+.moneda{
+    padding: 30px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moneda select{
+    padding: 5px;
+    font-size: 15px;
+}
+
+@media (max-width:600px){
+    .moneda input{
+        width: 200px;
+    }
+}
