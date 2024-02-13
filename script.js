@@ -26,3 +26,81 @@ if (isNaN(pesos) || isNaN(tasaCambioPesosADolares)) {
   const dolaresConvertidos = pesosADolares(pesos, tasaCambioPesosADolares);
   console.log(`${pesos} pesos argentinos son ${dolaresConvertidos} dólares.`);
 }
+
+// euro a pesos
+function eurosAPesos(euros, tasaCambio) {
+  return euros * tasaCambio;
+}
+const euros = parseFloat(prompt("Ingrese la cantidad de euros:"));
+const tasaCambioeurosAPesos = 1300;
+
+if (isNaN(euros) || isNaN(tasaCambioeurosAPesos)) {
+console.log("Por favor, ingrese valores numericos validos.");
+} else {
+const pesosConvertidos = eurosAPesos(euros, tasaCambioeurosAPesos);
+console.log(`${euros} euros son ${pesosConvertidos} pesos argentinos.`);
+}
+
+// real a pesos
+function realesAPesos(reales, tasaCambio) {
+  return reales * tasaCambio;
+}
+const reales = parseFloat(prompt("Ingrese la cantidad de reales:"));
+const tasaCambiorealesAPesos = 200;
+
+if (isNaN(reales) || isNaN(tasaCambiorealesAPesos)) {
+console.log("Por favor, ingrese valores numericos validos.");
+} else {
+const pesosConvertidos = realesAPesos(reales, tasaCambiorealesAPesos);
+console.log(`${reales} reales son ${pesosConvertidos} pesos argentinos.`);
+}
+
+
+
+
+
+
+
+
+// arrays y objetos 
+
+const diferentesDivisas = [
+  {
+    moneda: "peso argentino",
+    simbolo: "$",
+    ambito: "argentina",
+    tasaMomentanea: "1100",
+    codigoIso:	"ARS",
+  },
+  {
+    moneda: "dolar",
+    simbolo: "$",
+    ambito: "estados unidos",
+    tasaMomentanea: "1200",
+    codigoIso:	"USD",
+  },
+  {
+    moneda: "euro",
+    simbolo: "€",
+    ambito: "europa",
+    tasaMomentanea: "1250",
+    codigoIso:	"EUR",
+  },
+  {
+    moneda: "real",
+    simbolo: "R$",
+    ambito: "brasil",
+    tasaMomentanea: "200",
+    codigoIso:"BRL",
+  },
+  
+];
+
+for (let i = 0; i < diferentesDivisas.length; i++) {
+  console.log("Moneda:" + diferentesDivisas[i].moneda);
+  console.log("Simbolo: " + diferentesDivisas[i].simbolo);
+  console.log("Ambito: " + diferentesDivisas[i].ambito);
+  console.log("Tasa: " + diferentesDivisas[i].tasaMomentanea);
+  console.log("codigoIso: " + diferentesDivisas[i].codigoIso);
+
+}

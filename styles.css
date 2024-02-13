@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    
 }
 
 body{
@@ -34,7 +35,7 @@ p{
     cursor: pointer;
     border-radius: 5px;
     font-size: 12px;
-    padding: 5px;
+    padding: 10px;
 }
 .moneda{
     padding: 30px 0 ;
@@ -44,7 +45,7 @@ p{
 }
 
 .moneda select{
-    padding: 5px;
+    padding: 7px;
     font-size: 15px;
 }
 
