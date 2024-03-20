@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <title>cambio divisas</title>
     
 </head>
@@ -13,6 +14,17 @@
             <img src="./assets/logojavas.jpg">
         </div>
     </header>
+    <div id="loginForm">
+        <h2>Iniciar sesión</h2>
+        <input type="email" id="email" placeholder="Correo electrónico">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button onclick="login()">Iniciar sesión</button>
+    </div>
+
+    <div id="userData" style="display: none;"></div>
+
+    <div id="currencyData"></div>
+
     <h1>Conversor de moneda</h1>
     <h2>Convierte las monedas populares del mundo con tipos de cambio actualizados usando nuestra calculadora.</h2>
     <p>Escoge la moneda y la cantidad para hacer la conversion</p>
@@ -36,8 +48,6 @@
         </div>
 
         <div class="taza-cambio-container">
-            <p>ingrese aqui moneda</p>
-            <p>ingrese aqui moneda de cambio</p>
             <button class="btn">
                 Cambio
             </button>
@@ -68,7 +78,7 @@
         <img src="./assets/pesos.png" alt="pesos">
         <div class="informacion">
             <p>Pesos argentinos</p>
-            <p class="precio">$950</p>
+            <p class="precio">$1</p>
             <button>elegir</button>
         </div>
     </div>
@@ -76,7 +86,7 @@
         <img src="./assets/dolar.png" alt="dolar">
         <div class="informacion">
             <p>Dolar</p>
-            <p class="precio">$1000</p>
+            <p class="precio">$850.75</p>
             <button>elegir</button>
         </div>
     </div>
@@ -84,7 +94,7 @@
         <img src="./assets/euro.png" alt="euro">
         <div class="informacion">
             <p>Euro</p>
-            <p class="precio">$1100</p>
+            <p class="precio">$926.28</p>
             <button>elegir</button>
         </div>
     </div>
@@ -92,11 +102,16 @@
         <img src="./assets/reales.png" alt="reales">
         <div class="informacion">
             <p>Reales</p>
-            <p class="precio">$200</p>
+            <p class="precio">$170.32</p>
             <button>elegir</button>
         </div>
     </div>
 </div>
 <script src="script.js"></script>
 </body>
+<footer>
+    <p>
+        © 2024 Creado por <a href="https://github.com/BrendaAmaya">BrendaAmaya</a>
+    </p>
+</footer>
 </html>
